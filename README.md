@@ -1,5 +1,6 @@
-# Grupo_37
-Tech Challenge FIAP - 1º Projeto
+# Grupo_37 -  MACHINE LEARNING ENGINEERING
+
+Tech Challenge FIAP - 1º Projeto 
 
 # Integrantes: 
 - Débora Correia Campos
