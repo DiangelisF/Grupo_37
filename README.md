@@ -1,5 +1,10 @@
 # Grupo_37
 Tech Challenge FIAP - 1º Projeto
+Integrantes: 
+- Débora Correia Campos
+- Diangelis Barbato França
+- Fabrício Zambom Galvani
+- Vinicius Meira Albuquerque
 
 
 INTRODUÇÃO
