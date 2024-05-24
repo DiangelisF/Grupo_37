@@ -1,43 +1,8 @@
 from flask import Flask, request, jsonify
-#from uteis.load_file import MotorEmbrapaGrupo37
 import logging
-import pandas as pd
-import requests
-import csv
-#import awswrangler as wr
+from uteis.upload_file import MotorEmbrapaGrupo37
 
 app = Flask(__name__)
-
-class MotorEmbrapaGrupo37:
-  def __init__(self, file_name):
-    self.file_name = file_name
-
-  def getDataEmbrapa(self):
-    try:
-      urls = pd.read_json('urls.json')
-      url = urls.loc[urls.database == self.file_name, "url"].values[0]
-      sep = urls.loc[urls.database == self.file_name, "sep"].values[0]
-
-      response = requests.get(url)
-
-      if response.status_code == 200:
-        content = response.content
-        decoded_content = content.decode('utf-8')
-        cr = csv.reader(decoded_content.splitlines(), delimiter=sep)
-        dados = list(cr)
-        logging.info("CSV baixado com sucesso. Iniciando upload para o S3.")
-        
-        # # Salvar o DataFrame no S3 como CSV
-        # path = f's3://fabricio-my-tf-test-bucket/fiap_testes/{self.file_name}'
-        # wr.s3.to_csv(dados, path, index=False)
-        logging.info("Upload para o S3 concluído com sucesso.")
-        message = "DataFrame atualizado e enviado para o S3 com sucesso!"
-        return message
-      
-    except Exception as e:
-      logging.error(f"Erro ao fazer upload para o S3: {e}")
-      return f"Erro ao fazer upload para o S3: {e}"
-
 
 @app.route('/upload-file', methods=['GET'])
 def get_s3():
@@ -57,8 +22,6 @@ def get_s3():
     file_name = request.args.get('file_name', default='producao')
 
     message = MotorEmbrapaGrupo37(file_name).getDataEmbrapa()
-
-    print(dados)
     
     return jsonify(message=message), 200
 
