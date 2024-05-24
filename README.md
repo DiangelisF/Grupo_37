@@ -9,7 +9,7 @@ Tech Challenge FIAP - 1º Projeto
 
 
 # INTRODUÇÃO
-  - Descrição Geral: Forneça uma visão geral da API, explicando seu propósito e principais funcionalidades.
+  - API desenvolvida pelo Grupo 37 que realiza a análise de dados relacionados à produção, processamento, comercialização, importação e exportação de vinhos.A API permite a integração eficiente de dados vitivinícolas em sistemas e aplicações diversas.
 
 # ENDPOINTS ("Detalhado?")
 
