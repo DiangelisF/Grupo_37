@@ -17,6 +17,7 @@ Exemplo: /producao
 - Método: GET
 - Descrição: Retorna dados sobre a produção de vinhos, como quantidades e locais.
 - Resposta: Objeto JSON contendo id e descricao
+![Metodo GET](https://github.com/DiangelisF/Grupo_37/assets/170565693/9b84b653-3af0-4d8a-90c0-8e251a9577ec)
 
 # CÓDIGO DE ERRO (?)
 - Descrição dos Códigos de Status: Lista os códigos de status HTTP que a API pode retornar e o significado de cada um.
