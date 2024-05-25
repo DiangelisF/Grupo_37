@@ -17,11 +17,16 @@ Exemplo: /producao
 - Método: GET
 - Descrição: Retorna dados sobre a produção de vinhos, como quantidades e locais.
 - Resposta: Objeto JSON contendo id e descricao
+
 ![Metodo GET](https://github.com/DiangelisF/Grupo_37/assets/170565693/9b84b653-3af0-4d8a-90c0-8e251a9577ec)
 
-# CÓDIGO DE ERRO (?)
-- Descrição dos Códigos de Status: Lista os códigos de status HTTP que a API pode retornar e o significado de cada um.
- 
+# Visualização Interativa da API com Swagger (https://app.swaggerhub.com/):
+
+- Swagger UI fornece uma representação visual elegante e funcional da API. Ela transforma uma especificação OpenAPI (anteriormente conhecida como Swagger) em uma documentação de API interativa e navegável.
+  
+- Execução de Chamadas API Diretamente da Interface:
+Uma das características mais poderosas do Swagger UI é a capacidade de realizar chamadas API diretamente do navegador. Os usuários podem inserir parâmetros, autenticar suas sessões e executar as chamadas API para ver os resultados em tempo real. Isso simplifica o teste e a verificação de endpoints de API.
+
 # Aquitetura
 ![Arquitetura](https://github.com/DiangelisF/Grupo_37/assets/170565693/4db6bbe1-328e-4529-a7aa-e5355af6fe0c)
 
