@@ -19,7 +19,7 @@ Exemplo: /producao
 - Resposta: Objeto JSON contendo id e descricao
 
 # Visualização Interativa da API com Swagger (.yaml):
-(https://app.swaggerhub.com/)
+https://app.swaggerhub.com/
 
 - Swagger UI fornece uma representação visual elegante e funcional da API. Ela transforma uma especificação OpenAPI (anteriormente conhecida como Swagger) em uma documentação de API interativa e navegável.
   
