@@ -10,17 +10,18 @@ Tech Challenge FIAP - 1º Projeto
 
 
 # INTRODUÇÃO
-  - API desenvolvida pelo Grupo 37 que realiza a análise de dados relacionados à produção, processamento, comercialização, importação e exportação de vinhos.A API permite a integração eficiente de dados vitivinícolas em sistemas e aplicações diversas.
+  - API desenvolvida pelo Grupo 37 que realiza a análise de dados relacionados à produção, processamento, comercialização, importação e exportação de vinhos. A API permite a integração eficiente de dados vitivinícolas (http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_01) em sistemas e aplicações diversas. 
 
-# ENDPOINTS ("Detalhado?")
+# ENDPOINTS 
+Exemplo: /producao
+- Método: GET
+- Descrição: Retorna dados sobre a produção de vinhos, como quantidades e locais.
+- Resposta: Objeto JSON contendo id e descricao
 
 # CÓDIGO DE ERRO (?)
 - Descrição dos Códigos de Status: Lista os códigos de status HTTP que a API pode retornar e o significado de cada um.
-
-
-
-
-Aquitetura
+ 
+# Aquitetura
 ![Arquitetura](https://github.com/DiangelisF/Grupo_37/assets/170565693/4db6bbe1-328e-4529-a7aa-e5355af6fe0c)
 
 
