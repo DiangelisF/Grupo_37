@@ -10,7 +10,7 @@ Tech Challenge FIAP - 1º Projeto
 
 
 # INTRODUÇÃO
-  - API desenvolvida pelo Grupo 37 que realiza a análise de dados relacionados à produção, processamento, comercialização, importação e exportação de vinhos. A API permite a integração eficiente de dados vitivinícolas (http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_01) em sistemas e aplicações diversas. 
+  - API desenvolvida pelo Grupo 37 realiza a visualização/análise de dados relacionados à produção, processamento, comercialização, importação e exportação de vinhos. A API permite a integração eficiente de dados vitivinícolas (http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_01) em sistemas e aplicações diversas. 
 
 # ENDPOINTS 
 Exemplo: /producao
@@ -18,7 +18,8 @@ Exemplo: /producao
 - Descrição: Retorna dados sobre a produção de vinhos, como quantidades e locais.
 - Resposta: Objeto JSON contendo id e descricao
 
-# Visualização Interativa da API com Swagger (https://app.swaggerhub.com/):
+# Visualização Interativa da API com Swagger:
+(https://app.swaggerhub.com/)
 
 - Swagger UI fornece uma representação visual elegante e funcional da API. Ela transforma uma especificação OpenAPI (anteriormente conhecida como Swagger) em uma documentação de API interativa e navegável.
   
