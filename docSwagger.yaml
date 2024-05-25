@@ -1,0 +1,293 @@
+openapi: 3.0.1
+info:
+  title: Tech Challenge - OpenAPI 3.0
+  description: |-
+    API desenvolvida pelo Grupo 37 que realiza a análise de dados relacionados à produção, processamento, comercialização, importação e exportação de vinhos.A API permite a integração eficiente de dados vitivinícolas em sistemas e aplicações diversas. 
+    
+    Alguns links usáveis:
+    - [Repositório da API](https://github.com/DiangelisF/Grupo_37)
+    - [Dados da Vitivinicultura](http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_01)
+  termsOfService: http://swagger.io/terms/
+  contact: 
+    name: 'Contate os desenvolvedores'
+    email: Grupo37@exemplo.io
+  license:
+    name: "Lincença: GPLv3"
+    url: https://www.gnu.org/licenses/gpl-3.0.pt-br.html
+  version: 1.0.11
+servers:
+  - url: http://127.0.0.1:5000/
+    description: Localhost
+tags:
+  - name: Produção
+  - name: Processamento - Viníferas
+  - name: Processamento - Americanas
+  - name: Processamento - Uvas de Mesa
+  - name: Processamento - Sem Classificação
+  - name: Comercialização
+  - name: Importação - Vinhos de Mesa
+  - name: Importação - Espumantes
+  - name: Importação - Uvas Frescas
+  - name: Importação - Uvas Passas
+  - name: Importação - Suco de Uva
+  - name: Exportação - Vinhos de Mesa
+  - name: Exportação - Espumantes
+  - name: Exportação - Uvas Frescas
+  - name: Exportação - Suco de Uva
+
+paths:
+  /producao:
+    get:
+      tags:
+        - Produção
+      summary: Obtém dados de produção de vinhos
+      responses:
+        '200':
+          description: Dados de produção retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /processamento_viniferas:
+    get:
+      tags:
+        - Processamento - Viníferas
+      summary: Obtém dados de processamento de uvas viníferas
+      responses:
+        '200':
+          description: Dados de processamento de uvas viníferas retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /processamento_americanas:
+    get:
+      tags:
+        - Processamento - Americanas
+      summary: Obtém dados de processamento de uvas americanas
+      responses:
+        '200':
+          description: Dados de processamento de uvas americanas retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /processamento_mesa:
+    get:
+      tags:
+        - Processamento - Uvas de Mesa
+      summary: Obtém dados de processamento de uvas de mesa
+      responses:
+        '200':
+          description: Dados de processamento de uvas de mesa retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /processamento_sem_class:
+    get:
+      tags:
+        - Processamento - Sem Classificação
+      summary: Obtém dados de processamento de uvas sem classificação
+      responses:
+        '200':
+          description: Dados de processamento de uvas sem classificação retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /comercializacao:
+    get:
+      tags:
+        - Comercialização
+      summary: Obtém dados da comercialização de uvas
+      responses:
+        '200':
+          description: Dados da comercialização de uvas retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /importacao_mesa:
+    get:
+      tags:
+        - Importação - Vinhos de Mesa
+      summary: Obtém dados de importação de vinhos de mesa
+      responses:
+        '200':
+          description: Dados de importação de vinhos de mesa retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /importacao_espumantes:
+    get:
+      tags:
+        - Importação - Espumantes
+      summary: Obtém dados de importação de espumantes
+      responses:
+        '200':
+          description: Dados de importação de espumantes retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /importacao_frescas:
+    get:
+      tags:
+        - Importação - Uvas Frescas
+      summary: Obtém dados de importação de uvas frescas
+      responses:
+        '200':
+          description: Dados de importação de uvas frescas retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /importacao_passas:
+    get:
+      tags:
+        - Importação - Uvas Passas
+      summary: Obtém dados de importação de uvas passas
+      responses:
+        '200':
+          description: Dados de importação de uvas passas retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /importacao_suco_uva:
+    get:
+      tags:
+        - Importação - Suco de Uva
+      summary: Obtém dados de importação de suco de uva
+      responses:
+        '200':
+          description: Dados de importação de suco de uva retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /exportacao_mesa:
+    get:
+      tags:
+        - Exportação - Vinhos de Mesa
+      summary: Obtém dados de exportação de vinhos de mesa
+      responses:
+        '200':
+          description: Dados de exportação de vinhos de mesa retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /exportacao_espumantes:
+    get:
+      tags:
+        - Exportação - Espumantes
+      summary: Obtém dados de exportação de espumantes
+      responses:
+        '200':
+          description: Dados de exportação de espumantes retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /exportacao_frescas:
+    get:
+      tags:
+        - Exportação - Uvas Frescas
+      summary: Obtém dados de exportação de uvas frescas
+      responses:
+        '200':
+          description: Dados de exportação de uvas frescas retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
+  /exportacao_suco_uva:
+    get:
+      tags:
+        - Exportação - Suco de Uva
+      summary: Obtém dados de exportação de suco de uva
+      responses:
+        '200':
+          description: Dados de exportação de suco de uva retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  descricao:
+                    type: string
