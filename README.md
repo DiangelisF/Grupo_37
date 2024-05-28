@@ -16,7 +16,7 @@ Tech Challenge FIAP - Fase 1
 Exemplo: /producao
 - Método: GET
 - Descrição: Retorna dados sobre a produção de vinhos, como quantidades e locais.
-- Resposta: Objeto JSON contendo id e descricao
+- Resposta: Resposta de Sucesso ou Erro ao gravar o arquivo CSV no bucket S3.
 
 # Visualização Interativa da API com Swagger (.yaml):
 https://app.swaggerhub.com/
